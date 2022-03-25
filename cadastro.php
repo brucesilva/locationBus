@@ -1,3 +1,15 @@
+<?php
+
+
+
+if (isset($_GET['c'])) {
+    $naoInserido = $_GET['c'];
+} else {
+    $naoInserido = 0;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -21,7 +33,11 @@
 
 <body>
 
+
+
     <div class="container login-container">
+
+
         <div class="row">
             <div class="col-md-6 login-form-1">
                 <h1>Welcome the BusLocation </h1>
@@ -42,25 +58,44 @@
                     <img src="assets/img/icon100.png" alt="" width="70px" height="70" />
                 </div>
 
+
+                <?php
+                if ($naoInserido == 2) { ?>
+
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>E-mail já cadastrado, favor escolher outro e-mail para cadastro.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+
+                <?php   }  ?>
+
+
+
                 <!-- aqui pra baixo já começa o outro login -->
                 <h1>Cadastro</h1>
 
-                <form action="">
+                <form action="cadastroController.php" method="post">
 
                     <div class="form-group">
-                        <input type="text" class="form-control" required placeholder="Your Name *" value="" />
+                        <input type="text" class="form-control" name="nome" required placeholder="Your Name *" value="" />
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" required placeholder="Your Email *" value="" />
+                        <input type="email" class="form-control" name="email" required placeholder="Your Email *" value="" />
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control" required placeholder="Your Password *" value="" />
+                        <input type="text" class="form-control" name="telefone" required placeholder="Your Telephone *" value="" />
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" class="btn btnSubmit" value="Login" />
+                        <input type="password" class="form-control" name="senha" required placeholder="Your Password *" value="" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="btn btnSubmit" value="Cadastrar" />
                     </div>
                     <div class="form-group">
 
@@ -97,6 +132,9 @@
     </div>
 
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </body>
 

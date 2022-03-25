@@ -1,5 +1,15 @@
+<?php
+
+if (isset($_GET['c'])) {
+    $Inserido = $_GET['c'];
+} else {
+    $Inserido = 0;
+}
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +30,20 @@
 </head>
 
 <body>
+
+    <div class="container">
+        <?php
+        if ($Inserido == 1) { ?>
+
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="text-align: center;">
+                <strong>Dados cadastrados com sucesso - Acesse o sistema com seu e-mail e senha cadastrado
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+
+        <?php   }  ?>
+    </div>
 
     <div class="container login-container">
         <div class="row">
@@ -42,7 +66,13 @@
                     <img src="assets/img/icon100.png" alt="" width="70px" height="70" />
                 </div>
 
+
+
+
                 <!-- aqui pra baixo já começa o outro login -->
+
+
+
                 <h1>Login</h1>
 
                 <form action="">
@@ -85,7 +115,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- parte do quem somos -->
 
@@ -200,6 +229,10 @@
         </div>
     </div>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </body>
 
