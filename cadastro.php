@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!------ Include the above in your HEAD tag ---------->
 
     <link rel="stylesheet" href="assets/css/cssBootstrap.css">
@@ -43,25 +43,32 @@
                 </div>
 
                 <!-- aqui pra baixo já começa o outro login -->
-                <h1>Login</h1>
+                <h1>Cadastro</h1>
 
                 <form action="">
 
                     <div class="form-group">
+                        <input type="text" class="form-control" required placeholder="Your Name *" value="" />
+                    </div>
+
+                    <div class="form-group">
                         <input type="email" class="form-control" required placeholder="Your Email *" value="" />
                     </div>
+
                     <div class="form-group">
                         <input type="password" class="form-control" required placeholder="Your Password *" value="" />
                     </div>
+
                     <div class="form-group">
-                        <input type="submit" class="btnSubmit" value="Login" />
+                        <input type="submit" class="btn btnSubmit" value="Login" />
                     </div>
                     <div class="form-group">
 
                         <a href="#" class="btnForgetPwd" value="Login">Esqueceu a Senha?</a>
                     </div>
-
                 </form>
+
+
 
             </div>
         </div>

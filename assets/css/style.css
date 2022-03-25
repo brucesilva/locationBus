@@ -1,0 +1,83 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* essa é a DIV inteira do Site*/
+.containerPai {
+  display: flex;
+}
+
+/* Classe sem flex */
+.container1 {
+  background-color: #2f2bad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+}
+
+.imgLocalizaBus {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: white;
+}
+.nomeSite {
+  margin-bottom: 20px;
+}
+
+.descricao {
+  text-align: justify;
+  color: white;
+}
+
+/* fim da descrição do Site */
+
+/*Cadastro */
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  border: 0px solid blue;
+}
+
+.divCadastro {
+  color: black;
+  width: 400px;
+  margin-top: 30px;
+}
+
+/* Parte do cadastro */
+.container2 {
+  width: 50%;
+  height: 100vh;
+}
+
+.borderRedeSocial {
+  border-top: 2px solid red;
+  width: 150px;
+  height: 50px;
+}
+
+.facebook {
+  color: blue;
+  margin: 10px;
+}
+.instagram {
+  color: orange;
+  margin: 10px;
+}
+.whatsap {
+  color: green;
+  margin: 10px;
+}
+
+/* classe na div dos input para pintar o nome */
